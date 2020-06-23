@@ -20,3 +20,25 @@
   * 금액에 따른 수동, 자동 장 수
   * 뽑은 번호 리스트
   * 당첨 통계
+  
+## 객체 설계
+
+- LottoNumber
+  - 개별 번호
+- Lotto
+  - LottoNumberList
+- LottoTicket
+  - LottoList
+- LottoPrinter
+  - Lotto 출력기
+  - getLottoTicket()
+- LottoConsumer
+  - Lotto 사는 객체
+  - constructor(Prize prize)
+  - setPassive(Lotto.. lotto)
+  - LottoTicket buyLotto()
+- LottoChecker
+  - LottoWinResult checkWin(LottoTicket ticket)
+- LottoWinResult
+  - winResult
+  
